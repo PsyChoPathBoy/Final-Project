@@ -18,19 +18,19 @@ async function detail() {
             content.innerHTML = '';
             let detailContent = `
             <div id ="details" >
-            <div id="imgdetail"><img src="../img/${i}.jpg"</div>
-            <h1>${data[i].Ten}</h1>
-            <div style="background: url(../img/${i}${i + 1}.jpg); "></div>
-            <h3>${data[i].Description}<h3>
-            <h3>Lịch Sử</h3>
-            <div style="background: url(../img/${i}${i + 2}.jpg);"></div>
-            <p>${data[i].LichSu}</p>
-            <h3>Câu Chuyện</h3>
-            <div style="background: url(../img/${i}${i + 3}.jpg);"></div>
-            <p>${data[i].CauChuyen}</p>
-            <h3>Di Tích</h3>
-            <div style="background: url(../img/${i}${i + 4}.jpg);"></div>
-            <p>${data[i].DiTich}</p>
+                <div id="imgdetail"><img style=' height: 400px' src="../Final-Project//img/${i}.jpg"</div>
+                <h1>${data[i].Ten}</h1>
+                <div style="background: url(../Final-Project//img/${i}${i + 1}.jpg); "></div>
+                <h3>${data[i].Description}<h3>
+                <h3>Lịch Sử</h3>
+                <div style="background: url(../Final-Project//img/${i}${i + 2}.jpg);"></div>
+                <p>${data[i].LichSu}</p>
+                <h3>Câu Chuyện</h3>
+                <div style="background: url(../Final-Project//img/${i}${i + 3}.jpg);"></div>
+                <p>${data[i].CauChuyen}</p>
+                <h3>Di Tích</h3>
+                <div style="background: url(../Final-Project//img/${i}${i + 4}.jpg);"></div>
+                <p>${data[i].DiTich}</p>
             </div>
             `
 
@@ -48,7 +48,7 @@ async function renderData() {
 
     for (let i = 0; i < data.length; i++) {
         let detail = `  <div class='items'>
-                            <a style="margin-top:25px" :hover><img class="imagedropshadow" src="../img/${i}.jpg" width="300px" height="300px"></a>
+                            <a style="margin-top:25px" :hover><img class="imagedropshadow" src="../Final-Project/img/${i}.jpg" width="300px" height="300px"></a>
                             <h2 id='name'>${data[i].Ten}</h2>
                         </div>
                         `;
